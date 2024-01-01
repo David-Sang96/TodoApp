@@ -1,13 +1,90 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.todo-container {
+  max-width: 450px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid black;
+  padding: 10px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+.addTodo-input {
+  width: 97%;
+  padding: 5px;
+  outline: none;
+  margin-left: 7px;
+}
+.todoList-container {
+  display: flex;
+  flex-direction: column;
+}
+.todolist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.todoList-checkBox {
+  display: flex;
+  gap: 7px;
+}
+.todoList-input {
+  width: 180%;
+  padding: 5px;
+  outline: none;
+}
+.fa-solid {
+  cursor: pointer;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.checkBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkALlBtn {
+  display: inline-block;
+  margin-block: 8px;
+  font-size: 15px;
+  padding: 3px 4px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.btn-group {
+  margin-block: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.btns {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.btns :hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.clear-completed {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
